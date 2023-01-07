@@ -1,0 +1,22 @@
+version: 2
+
+macros:
+  - name: log_sources
+    description: "Logs information about source nodes to the console in pipe-delimited csv format"
+    arguments:
+      - name: graph
+        type: dict
+        description: '{{ doc("graph") }}'
+  - name: log_models
+    description: "Logs information about model nodes to the console in pipe-delimited csv format"
+    arguments:
+      - name: graph
+        type: dict
+        description: '{{ doc("graph") }}'
+  - name: log_seeds
+    description: "Logs information about seed nodes to the console in pipe-delimited csv format"
+    arguments:
+      - name: graph
+        type: dict
+        description: '{{ doc("graph") }}'
+  - name: log_results_csv
