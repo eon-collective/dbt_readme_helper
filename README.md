@@ -7,8 +7,8 @@ This package logs information about source, seed, & model nodes to the command l
 1. Add this package to your `packages.yml`:
 ```yaml
 packages:
-  - package: 
-    version:
+  - git: "https://github.com/eon-collective/dbt_readme_helper.git"
+    revision: 0.1.0
 ```
 2. Run `dbt deps` to install the package.
 3. Add an on-run-end hook to your `dbt_project.yml`: `on-run-end: "{{ dbt_readme_logger.log_results_csv() }}"`
