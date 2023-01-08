@@ -68,7 +68,7 @@ FILENAME|DATABASE|SCHEMA|SEED|NOTES
 - `Notes`: An empty column that the developer should fill in with any relevant notes.
 
 ### log_models ([source](macros/log_models.sql))
-Logs information about model nodes to the console in pipe-delimited csv format. See [Sample Outputs](#Sample-Output)
+Logs information about model nodes to the console in pipe-delimited csv format. See [Sample Output](#Sample-Output)
 - `Database`: The database that the model was outputted to.
 - `Schema`: The schema that the model was outputted to.
 - `Model`: The name of the dbt model inside the warehouse.
@@ -76,3 +76,6 @@ Logs information about model nodes to the console in pipe-delimited csv format. 
 - `Tags`: An array of tags that are "attached" to the model.
 - `Notes`: An empty column that the developer should fill in with any relevant notes.
 
+## Acknowledgements
+- Thanks to Brooklyn Data and Tails.com for developing and maintaing the [dbt-artifacts](https://github.com/brooklyn-data/dbt_artifacts) package that beautifully parses out the dbt context variables.
+- Thank you dbt Labs for developing and maintaining the [dbt-codegen](https://github.com/dbt-labs/dbt-codegen) package that paved the way for logging output to the command line.
