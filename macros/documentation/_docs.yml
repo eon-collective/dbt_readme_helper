@@ -20,3 +20,4 @@ macros:
         type: dict
         description: '{{ doc("graph") }}'
   - name: log_results_csv
+    description: "The higher-order macro that orchestrates the other log_* macros"
